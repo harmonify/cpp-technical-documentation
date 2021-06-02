@@ -1,0 +1,104 @@
+body{
+	overflow-x: hidden;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	line-height: 1.7rem;
+}
+#navbar{
+	width: 18em;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-right: 2px solid #888;
+}
+#nav-header{
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	text-align: center;
+	padding: 0.5em 0;
+	border-right: 2px solid #000;
+}
+#nav-link-container{
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+}
+.nav-link{
+	position: relative;
+	text-decoration: none;
+	color: #555;
+	line-height: 2rem;
+	padding: 0.3em 1.5em;
+	border-bottom: 1px solid #ccc;
+}
+#main-doc{
+	width: 100%;
+	height: auto;
+	margin-left: 19em;
+	padding: 2em;
+}
+.main-section{
+	width: 100%;
+	height: auto;
+	margin-bottom: 3em;
+}
+.main-section header{
+	margin-left: -0.5em;
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+.main-section p{
+}
+.main-section code ol{
+	background-color: #eee;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding-left: 2em;
+	line-height: 1.5rem;
+}
+.main-section code ol li p {
+	background-color: #f8f8f8;
+	margin: 0;
+	padding-left: 0.2rem;
+}
+.indent-1{
+	text-indent: 1.5rem;
+}
+#Reference{
+	padding-bottom: 2em;
+}
+@media only screen and (max-width: 640px){
+	body{
+		flex-direction: column;
+		align-items: center;
+	}
+	#navbar{
+		position: relative;
+		width: 90%;
+		max-height: 16em;
+		border: 2px solid #888;
+	}
+	#nav-link-container{
+		height: 11em;
+		overflow-y: scroll;
+	}
+	#main-doc{
+		width: 90%;
+		margin-left: 0;
+	}
+	.main-section header{
+		margin-left: -0.25em;
+	}
+	#Reference{
+		padding-bottom: 0em;
+	}
+}
